@@ -21,10 +21,12 @@ email: "vutu201130@mail.com"
 theme: "minima"
 
 # rss: rss
+markdown: kramdown
 
 kramdown:
   syntax_highlighter_opts:
     disable: true
+  math_engine: mathjax
     
 plugins:
   - jekyll-feed
