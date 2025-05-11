@@ -15,7 +15,7 @@ Giả sử $y=f(x) + \epsilon$ với $\epsilon$ là một nhiễu có kỳ vọn
 
 Với mỗi một tập training $D$ ta train được 1 hàm xấp xỉ $\hat{f}$ cho $f$. Trong setting này, $\hat(f)$ là biến ngẫu nhiên, còn $f$ là không phải ngẫu nhiên.
 
-$\text{Error} = E[(y-\hat{f})^2]$ là trung bình lỗi của thuật toán (mô hình) trên tất cả các tập dataset. Tức là dùng nhiều tập data để tính nhiều $\hat{f}$ thì trung 
+\[\text{Error} = E[(y-\hat{f})^2]\] là trung bình lỗi của thuật toán (mô hình) trên tất cả các tập dataset. Tức là dùng nhiều tập data để tính nhiều $\hat{f}$ thì trung 
 bình lỗi so với ground-truth là bao nhiêu.
 
 Do $y=f(x) + \epsilon$ với $\epsilon$ nên
