@@ -2,7 +2,7 @@
 Trong lý thuyết về học máy, bias-variace tradeoff là một khái niệm quan trọng để hiểu về tính chất của model học được.
 Trong bài toán học máy, dựa vào data thu thập được, mục tiêu là cố gắng đi tìm một ánh xạ \\(f\\), \\(y=f(x)\\) mô tả mối quan hệ giữa \\(y\\) và \\(x\\).
 
-- Bias: độ lệch giữa mô hình học được và ground-truth. Mô hình học được kí hiệu là $\hat{f}$. Ground-truth cần đi xấp xỉ là \\(f\\).
+- Bias: độ lệch giữa mô hình học được và ground-truth. Mô hình học được kí hiệu là \\(\hat{f}\\). Ground-truth cần đi xấp xỉ là \\(f\\).
 - Variance: mô tả sự toán loạn của mô hình học được, hoặc độ nhạy cảm của mô hình. Với 1 đầu vào \\(x\\), khi thay đổi nhỏ của \\(x\\) dẫn đến thay đổi lơn của \\(f(x)\\).
 
 Lý tưởng nhất là train được ra mô hình low-bias và low-variabce.
@@ -23,7 +23,8 @@ Do \\(y=f(x) + \epsilon\\) nên
 $$
 \begin{aligned}
 E[(y-\hat{f})^2] = E[(f(x) + \epsilon -\hat{f})^2] \\
-                 = E[((f(x) -\hat{f}) + \epsilon)^2] 
+                 = E[((f(x) -\hat{f}) + \epsilon)^2] \\
+                 = E[(f(x) -\hat{f})^2 + 2(f(x) -\hat{f})\epsilon + \epsilon^2] (áp dụng công thức: (a+b)^2=a^2+2ab+b^2 
 \end{aligned}
 $$
 
